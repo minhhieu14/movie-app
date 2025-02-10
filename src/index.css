@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  color: #e5e5d8;
+  font-family: Netflix, Helvetica, Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Netflix";
+  src: local("Netflix"), url(./fonts/Netflix_Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Netflix_Medium";
+  src: local("Netflix_Medium"),
+    url(./fonts/Netflix_Medium.woff2) format("woff2");
+}
+#root {
+  overflow: hidden;
+}

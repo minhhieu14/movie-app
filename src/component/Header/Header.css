@@ -1,0 +1,19 @@
+.bg-header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 10%,
+    rgba(0, 0, 0, 0)
+  );
+  transition: 0.3s ease-in-out;
+}
+.bg-black {
+  transition: transform 0.3s ease-in-out;
+}
+@keyframes transform {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}

@@ -1,0 +1,22 @@
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  transition: width 0.5s ease;
+  height: 2px;
+  background-color: #ff0000;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+.nav__category:checked ~ .nav_mobile {
+  transform: translateX(100%);
+  transition: transform ease 0.5s;
+}
+.nav__category:checked ~ .nav__overlay {
+  display: block;
+}
